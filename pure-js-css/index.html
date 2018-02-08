@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Sth. about scrollbar!</title>
+</head>
+
+<body>
+    <div class="container">
+        <section>
+            <h4>一般的滚动</h4>
+            <div class="wrap">
+                <div class="content">
+                    Design thinking is a human-centered approach to innovation that draws from the designer’s toolkit to integrate the needs
+                    of people, the possibilities of technology, and the requirements for business success. Design thinking
+                    is a human-centered approach to innovation that draws from the designer’s toolkit to integrate the needs
+                    of people, the possibilities of technology, and the requirements for business success.
+                </div>
+            </div>
+        </section>
+        <section>
+            <h4>隐藏了滚动条的滚动</h4>
+            <div class="wrap">
+                <div class="content no-scrollbar">
+                    Design thinking is a human-centered approach to innovation that draws from the designer’s toolkit to integrate the needs
+                    of people, the possibilities of technology, and the requirements for business success. Design thinking
+                    is a human-centered approach to innovation that draws from the designer’s toolkit to integrate the needs
+                    of people, the possibilities of technology, and the requirements for business success.
+                </div>
+            </div>
+        </section>
+        <section>
+            <h4>CSS设置webkit样式</h4>
+            <div class="wrap">
+                <div class="content webkit-style">
+                    Design thinking is a human-centered approach to innovation that draws from the designer’s toolkit to integrate the needs
+                    of people, the possibilities of technology, and the requirements for business success. Design thinking
+                    is a human-centered approach to innovation that draws from the designer’s toolkit to integrate the needs
+                    of people, the possibilities of technology, and the requirements for business success.
+                </div>
+            </div>
+        </section>
+        <section>
+            <h4>JS+CSS兼容方案</h4>
+            <div class="wrap j-scroll-container">
+                <div class="j-scroll"><div class="bar" onmousedown="barMousedown(event)"></div></div>
+                <div class="content">
+                    Design thinking is a human-centered approach to innovation that draws from the designer’s toolkit to integrate the needs
+                    of people, the possibilities of technology, and the requirements for business success. Design thinking
+                    is a human-centered approach to innovation that draws from the designer’s toolkit to integrate the needs
+                    of people, the possibilities of technology, and the requirements for business success.
+                </div>
+            </div>
+        </section>
+        <section></section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
