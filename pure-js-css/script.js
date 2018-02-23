@@ -1,3 +1,7 @@
+// TODO
+// 1. js+css滚动到底部后无法触发外部容器的滚动
+// 2. 封装Angular组件
+// 3. 可选：jQuery实现（使用mCustomScrollbar）
 var initPos = {
         x: 0,
         y: 0
@@ -7,7 +11,7 @@ var initPos = {
     barHeight,
     wheelDeltaSum = 0,
     scrolledHeight = 0,
-    sampleRatio = 4;
+    sampleRatio = 2; // TODO how to set the best sample ratio
 
 
 function clearTextSelection() {
