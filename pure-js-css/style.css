@@ -16,9 +16,15 @@ div {
     box-shadow: 2px 2px 16px 0 rgba(0, 0, 0, .4);
 }
 
+section h4 {
+    margin: 0;
+    text-align: center;
+    padding: 10px 0 6px;
+    border-bottom: 1px solid #ccc;
+}
 .wrap {
     width: 200px;
-    height: 100%;
+    height: 100px;
     overflow: hidden;
     padding-bottom: 10px;
 }
@@ -74,16 +80,17 @@ div {
 }
 
 /* js+css scroll */
-.j-scroll-container {
+
+.scroll-container {
     position: relative;
 }
 
-.j-scroll-container .content {
+.scroll-container .content {
     overflow: hidden;
     padding-right: 8px;
 }
 
-.j-scroll-container .j-scroll {
+.scroll-container .scroll {
     position: absolute;
     right: 0;
     top: 0;
@@ -94,7 +101,7 @@ div {
     border-radius: 4px;
 }
 
-.j-scroll .bar {
+.scroll-container .scroll .bar {
     position: absolute;
     right: 0;
     top: 0;

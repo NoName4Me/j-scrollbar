@@ -6,8 +6,8 @@ var initPos = {
         x: 0,
         y: 0
     },
-    scrollBar = document.querySelector(".j-scroll-container .bar"),
-    scrollContent = document.querySelector(".j-scroll-container .content"),
+    scrollBar = document.querySelector(".scroll-container .bar"),
+    scrollContent = document.querySelector(".scroll-container .content"),
     barHeight,
     wheelDeltaSum = 0,
     scrolledHeight = 0,
@@ -79,3 +79,5 @@ scrollContent.addEventListener("wheel", function(event) {
 
 // set init bar height
 setScrollBarHeight();
+
+
