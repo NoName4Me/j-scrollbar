@@ -9,7 +9,6 @@ var initPos = {
     scrollBar = document.querySelector(".scroll-container .bar"),
     scrollContent = document.querySelector(".scroll-container .content"),
     barHeight,
-    wheelDeltaSum = 0,
     scrolledHeight = 0,
     sampleRatio = 2; // TODO how to set the best sample ratio
 
@@ -67,8 +66,6 @@ scrollBar.addEventListener("mousedown", barMousedown);
 
 // scroll is triggered only when it can be scrolled
 scrollContent.addEventListener("wheel", function(event) {
-    // sample for nice UX
-    wheelDeltaSum += event.deltaY;
     scrolledHeight += event.deltaY / sampleRatio;
     scrolledHeight = restrictScrollDelta(scrolledHeight);
     doScrollY(scrolledHeight);
